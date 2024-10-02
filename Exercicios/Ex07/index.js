@@ -1,6 +1,6 @@
 const ageMin = 18;
 
-let age = prompt('Qual é sua idade?');
+let age = 18;
 
 const isAuthorized = age >= ageMin;  
 
