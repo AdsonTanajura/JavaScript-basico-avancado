@@ -7,3 +7,4 @@ console.log(sliceArray);
 const nomes = ["Lucas", "Ana", "João", "Mariana", "Pedro", "Clara", "Gabriel", "Fernanda", "Carlos", "Juliana"];
 
 console.log(nomes.slice(1,3));
+console.log(nomes)
