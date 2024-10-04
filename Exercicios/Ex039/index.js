@@ -38,3 +38,4 @@ const palio = new Car({ marca: 'Fiat', cor: 'Red' });
 
 palio.abastecer(10); 
 palio.anda(ligar = true);
+
