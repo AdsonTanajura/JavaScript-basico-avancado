@@ -20,6 +20,31 @@ ceps.forEach(cep => {
         console.log('Cep invalido! ' + cep);
     }
 })
+
+const tel =/\(?\d{2}\)?\s?\d{4,5}-\d{4}$/;
+
+const telefones = [
+    "(11) 98765-4321", // Válido
+    "1198765-4321",    // Válido
+    "11 98765-4321",   // Válido
+    "(11) 1234-5678",  // Válido
+    "(21)98765-4321",  // Válido
+    "(31) 99876-5432", // Válido
+    "98765-4321",      // Inválido (falta o código de área)
+    "11-98765-4321",   // Inválido (falta o espaço ou parênteses no código de área)
+    "(11)987654321",   // Inválido (falta o hífen)
+    "(55) 12345-6789", // Válido
+    "(44) 9876-5432",  // Inválido (deveria ter 5 dígitos na primeira parte)
+    "110987654321"     // Inválido (falta o hífen e espaço)
+  ];
+  
+  telefones.forEach(tele => {
+    if(tel.test(tele)) {
+        console.log('Telefone ' + tele + ' valido');
+    } else {
+        console.log('Telefone ' + tele + ' invalido');
+    }
+  })
   
 
 
