@@ -1,5 +1,11 @@
-const muitosOuPoucosDigitos = /\d+/;
+const opcional = /Prova\s?\d?/;
 
-console.log(muitosOuPoucosDigitos.test("123"));
-console.log(muitosOuPoucosDigitos.test("123456789"));
-console.log(muitosOuPoucosDigitos.test(""));
+console.log(opcional.test("Prova"));
+console.log(opcional.test("Prova 1"));
+console.log(opcional.test("Prova 2"));
+
+const opcional2 = /Prova\s\d?/;
+
+console.log(opcional2.test("Prova"));
+console.log(opcional2.test("Prova 1"));
+console.log(opcional2.test("Prova 2"));
