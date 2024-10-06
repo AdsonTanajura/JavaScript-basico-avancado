@@ -17,3 +17,10 @@ button2.addEventListener('mousup', () => {
 button2.addEventListener('mousedown', () => {
     console.log('Apretou o botao');
 });
+
+const button3 = document.querySelector('#huhu');
+
+button3.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    console.log('Você clicou me mim com o lado direito do mouse?')
+})
