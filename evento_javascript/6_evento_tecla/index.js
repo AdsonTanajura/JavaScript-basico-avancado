@@ -1,4 +1,4 @@
-window.addEventListener('keydown', (e) => {
+window.addEventListener('keyup', (e) => {
     if(e.key == 'a') {
         console.log('Você acetou a leta!! Era a letra A');
     } else {
